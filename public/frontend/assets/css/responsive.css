@@ -1,0 +1,107 @@
+@media screen and (max-width: 1024px){
+	.nav-toggle-btn {
+	    display: flex;
+	}
+
+	.nav-items-wrapper .nav-list {
+	    position: fixed;
+	    flex-direction: column;
+	    top: 70px;
+	    right: -400px;
+	    background: #fff;
+	    padding-left: 0;
+	    width: 300px;
+	    height: auto;
+	    border-radius: 5px 0 0 5px;
+	    transition: all .5s ease;
+	    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	.nav-items-wrapper {
+	    justify-content: space-between;
+	}
+
+	.nav-list .nav-item {
+	    align-items: flex-start;
+	    width: 100%;
+	    border-bottom: 1px solid #f4f4f4;
+	    padding-left: 10px;
+	    height: auto;
+	}
+
+	.nav-item-link {
+	    color: #000;
+	    height: auto;
+	    display: block;
+	}
+
+	.nav-list .nav-item:last-child {
+	    border-bottom: none;
+	}
+
+	.menu-visible .nav-list {
+	    right: 0;
+	}
+	.menu-visible .nav-toggle-btn .btn-inner {
+	    border-color: transparent;
+	}
+
+	.menu-visible .nav-toggle-btn .btn-inner:before {
+	    transform: rotate(45deg);
+	    top: 0;
+	    transition: all .5s ease;
+	}
+
+	.menu-visible .nav-toggle-btn .btn-inner:after {
+	    transform: rotate(-45deg);
+	    top: 0;
+	    transition: all .5s ease;
+	}
+	.home-slider-items-wrapper .owl-dots {
+	    bottom: 40px;
+	    top: inherit;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    display: flex;
+	    align-items: center;
+	}
+
+	.home-slider-items-wrapper .owl-dots .owl-dot {
+	    margin-bottom: 0;
+	    margin-right: 10px;
+	}
+
+	.home-slider-items-wrapper .owl-dots .owl-dot:last-child {
+	    margin-right: 0;
+	}
+
+	.home-slider-items-wrapper .owl-dots .owl-dot.active {
+	    width: 40px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.slide-item-title {
+	    font-size: 40px;
+	}
+
+	.slide-item-subtitle {
+	    font-size: 20px;
+	}
+	.about-right-side-wrap {
+	    margin-top: 30px;
+	    text-align: center;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.home-slider-item {
+	    height: 500px;
+	}
+
+	.slider-item-content {
+	    text-align: center;
+	    left: 50%;
+	    top: 50%;
+	}
+}
